@@ -61,6 +61,9 @@ fs.createReadStream('DoubleFinInterviewAssignmentData.csv')
 .on('data', (data) => results.push(data))
 .on('end', () => {
     console.log(results)
+    //access results as it is an array
+    //use a webpack or api to validate the data
+    
 }
 )
 ;
