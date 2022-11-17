@@ -1,0 +1,53 @@
+{
+    "properties": {
+        "employee id": {
+            "type": "string"
+        },
+        "employee first name": {
+            "type": "string"
+        },
+        "employee last name": {
+                "type": "string"
+            },
+        "is manager": {
+            "type": "boolean"
+        },
+        "employee email":{
+            "type": "string"
+        },
+        "employee start date": {
+            "type": "string",
+            "format" : "date"
+        },
+        "employee end date": {
+            "type": "string",
+            "format" : "date"
+        },
+        "function": {
+            "type": "string"
+        },
+        "job level": {
+            "type": "string"
+        },
+        "employee job title": {
+            "type": "string"
+        },
+        "job location": {
+            "type": "string"
+        },
+        "job family": {
+            "type": "string"
+        },
+        "cost center": {
+            "type": "string"
+        },
+        "employement type": {
+            "type": "string"
+        },
+        "manager's employee id": {
+            "type": "string"
+        },
+        "required": ["employee id"]
+    
+    }
+}

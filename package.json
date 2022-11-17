@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "csv-file-validator": "^2.0.0",
+    "csv-parser": "^3.0.0",
+    "csval": "^1.1.1"
+  }
+}
