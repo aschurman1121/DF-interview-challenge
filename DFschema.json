@@ -1,53 +1,69 @@
 {
+    "type": "object",
     "properties": {
         "employee id": {
-            "type": "string"
+            "type": "string",
+            "description": "Employee external id"
         },
         "employee first name": {
-            "type": "string"
+            "type": "string",
+            "description": "Employee first name"
         },
         "employee last name": {
-                "type": "string"
+                "type": "string",
+                "description": "Employee last name"
             },
         "is manager": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "Whether the employee is a manager"
         },
         "employee email":{
-            "type": "string"
+            "type": "string",
+            "description": "Employee work email"
         },
         "employee start date": {
             "type": "string",
-            "format" : "date"
+            "format" : "date",
+            "description": "Employee hire date"
         },
         "employee end date": {
             "type": "string",
-            "format" : "date"
+            "format" : "date",
+            "description": "Employee termination date"
         },
         "function": {
-            "type": "string"
+            "type": "string",
+            "description": "Business Function"
         },
         "job level": {
-            "type": "string"
+            "type": "string",
+            "description": "Job level"
         },
         "employee job title": {
-            "type": "string"
+            "type": "string",
+            "description": "Job title"
         },
         "job location": {
-            "type": "string"
+            "type": "string",
+            "description": "Employee job location"
         },
         "job family": {
-            "type": "string"
+            "type": "string",
+            "description": "Job Family"
         },
         "cost center": {
-            "type": "string"
+            "type": "string",
+            "description": "Cost Center"
         },
         "employement type": {
-            "type": "string"
+            "type": "string",
+            "description": "The employee's employment type, e.g. regular, temp, etc"
         },
         "manager's employee id": {
-            "type": "string"
-        },
-        "required": ["employee id"]
-    
-    }
+            "type": "string",
+            "description": "Employee id of the manager"
+        }
+        
+    },
+    "required": ["employee id", "employee first name", "employee last name", "employee email"]
 }
