@@ -38,6 +38,31 @@
 
 
 
-const csvData = 'hello, world, yes, no'
+// const URLwithData = 'https://storage.googleapis.com/custom-hris/data.html'
 
-console.log(Papa.parse(csvString[ , config]))
+// // console.log(Papa.parse(csvData))
+
+// console.log(Papa.parse( URLwithData, {
+//     download: true,
+//     header: true,
+
+// } 
+
+// ))
+
+
+
+const csv = require('csv-parser')
+const fs = require('fs')
+const results = [];
+
+fs.createReadStream('DoubleFinInterviewAssignmentData.csv')
+.pipe(csv({}))
+.on('data', (data) => results.push(data))
+.on('end', () => {
+    console.log(results)
+}
+)
+;
+
+console.log(results)
