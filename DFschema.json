@@ -19,16 +19,18 @@
         },
         "employee email":{
             "type": "string",
+            "format": "email",
             "description": "Employee work email"
         },
-        "employee start date": {
+        "start date": {
             "type": "string",
-            "format" : "date",
+            "format" : "duration",
             "description": "Employee hire date"
         },
-        "employee end date": {
+        "end date": {
             "type": "string",
-            "format" : "date",
+            "format" : "duration",
+            "optional": true,
             "description": "Employee termination date"
         },
         "function": {
@@ -65,5 +67,5 @@
         }
         
     },
-    "required": ["employee id", "employee first name", "employee last name", "employee email"]
+    "required": ["employee id", "employee first name", "employee last name", "employee email", "employee job title", "job location", "cost center", "start date"]
 }
