@@ -114,15 +114,12 @@ fs.createReadStream('DoubleFinInterviewAssignmentData.csv')
     .pipe(csv({}))
     .on('data', (data) => results.push(data))
     .on('end', () => {
-        // console.log(results)
-    //access results as it is an array
-    //use a webpack or api to validate the data
+
     CSVFileValidator(results, config)
     .then(csvData => {
         console.log(csvData)
-        csvData.data // Array of objects from file
-        // console.log(data)
-        csvData.inValidMessages // Array of error messages
+        csvData.data
+        csvData.inValidMessages 
     })
     .catch(err => {})
 }

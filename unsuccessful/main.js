@@ -18,7 +18,7 @@ const main = async () => {
   const parsed = await csval.parseCsv(csvString);
   const valid = await csval.validate(parsed, rules);
  
-  // csval.validate will either throw an error or valid will be true
+
 };
  
 main();
