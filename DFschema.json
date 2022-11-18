@@ -22,15 +22,12 @@
             "format": "email",
             "description": "Employee work email"
         },
-        "start date": {
+        "employee start date": {
             "type": "string",
-            "format" : "duration",
             "description": "Employee hire date"
         },
-        "end date": {
+        "employee end date": {
             "type": "string",
-            "format" : "duration",
-            "optional": true,
             "description": "Employee termination date"
         },
         "function": {
@@ -67,5 +64,6 @@
         }
         
     },
-    "required": ["employee id", "employee first name", "employee last name", "employee email", "employee job title", "job location", "cost center", "start date"]
+
+    "required": ["employee id", "employee first name", "employee last name", "employee email", "employee job title", "job location", "cost center"]
 }
